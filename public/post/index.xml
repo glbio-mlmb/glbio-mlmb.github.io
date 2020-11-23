@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on GLBIO 2021 Workshop</title>
+    <link>https://glbio-mlmb.github.io/post/</link>
+    <description>Recent content in Posts on GLBIO 2021 Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://glbio-mlmb.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning on Microbiome Data: Theory and Practice</title>
+      <link>https://glbio-mlmb.github.io/post/mlmb/</link>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://glbio-mlmb.github.io/post/mlmb/</guid>
+      <description>&lt;h3 id=&#34;organizers-tatiana-lenskaia-and-sambhawa-priya&#34;&gt;Organizers: Tatiana Lenskaia and Sambhawa Priya&lt;/h3&gt;
+&lt;p&gt;The workshop will focus on the theory and application of machine learning to
+microbiome datasets, including bacterial and viral communities. The following topics will be
+addressed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction to supervised machine learning, and how to implement a machine learning
+workflow using R and Python.&lt;/li&gt;
+&lt;li&gt;Applying machine learning algorithms (such as Random Forest) on microbiome datasets
+for disease risk prediction in humans.&lt;/li&gt;
+&lt;li&gt;Introduction to bacteria-phage interactions, and how it contributes to bacterial
+pathogenicity.&lt;/li&gt;
+&lt;li&gt;Applying machine learning methods to predict bacterial pathogenicity induced by
+phages.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

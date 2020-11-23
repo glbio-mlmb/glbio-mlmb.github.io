@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+  <title>Machine Learning on Microbiome Data: Theory and Practice &middot; GLBIO 2021 Workshop</title>
+
+  <meta name="description" content="GLBIO 2021 Tutorial: Machine Learning on Microbiome Data" />
+
+  
+
+<meta itemprop="name" content="Machine Learning on Microbiome Data: Theory and Practice">
+<meta itemprop="description" content="GLBIO 2021 Tutorial: Machine Learning on Microbiome Data">
+<meta itemprop="datePublished" content="2020-11-21T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-11-21T00:00:00+00:00" />
+<meta itemprop="wordCount" content="378">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Machine Learning on Microbiome Data: Theory and Practice"/>
+<meta name="twitter:description" content="GLBIO 2021 Tutorial: Machine Learning on Microbiome Data"/>
+
+
+<meta property="og:title" content="Machine Learning on Microbiome Data: Theory and Practice" />
+<meta property="og:description" content="GLBIO 2021 Tutorial: Machine Learning on Microbiome Data" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://glbio-mlmb.github.io/post/mlmb/" />
+<meta property="article:published_time" content="2020-11-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-21T00:00:00+00:00" />
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "https://glbio-mlmb.github.io/#author",
+      "name": "Tatiana Lenskaia, Sambhawa Priya",
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "https://glbio-mlmb.github.io/images/1.jpg"
+        
+      },
+      "description": "May 10, 2021"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://glbio-mlmb.github.io/#website",
+      "url": "https://glbio-mlmb.github.io/",
+      "name": "GLBIO 2021 Workshop",
+      "description": "May 10, 2021",
+      "publisher": {
+        "@id": "https://glbio-mlmb.github.io/#author"
+      },
+      "inLanguage": "en-us"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://glbio-mlmb.github.io/post/mlmb/#webpage",
+      "url": "https://glbio-mlmb.github.io/post/mlmb/",
+      "name": "Machine Learning on Microbiome Data: Theory and Practice",
+      "isPartOf": {
+        "@id": "https://glbio-mlmb.github.io/#website"
+      },
+      "about": {
+         "@id": "https://glbio-mlmb.github.io/#author"
+      },
+      "datePublished": "2020-11-21T00:00:00+00:00",
+      "dateModified": "2020-11-21T00:00:00+00:00",
+      "description": "GLBIO 2021 Tutorial: Machine Learning on Microbiome Data",
+      "inLanguage": "en-us",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://glbio-mlmb.github.io/post/mlmb/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://glbio-mlmb.github.io/post/mlmb/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://glbio-mlmb.github.io/post/mlmb/#webpage"
+      },
+      "headline": "Machine Learning on Microbiome Data: Theory and Practice",
+      "datePublished": "2020-11-21T00:00:00+00:00",
+      "dateModified": "2020-11-21T00:00:00+00:00",
+      "publisher": {
+        "@id": "https://glbio-mlmb.github.io/#author"
+      },
+      "keywords": [
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en-us",
+      "author": {
+        "@type": "Person",
+        "name": "Tatiana Lenskaia, Sambhawa Priya"
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://glbio-mlmb.github.io/post/mlmb/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <img src="/images/1.jpg" class="img-circle img-headshot center" alt="Profile Picture">
+        </div>
+        
+      
+
+      <h1>GLBIO 2021 Workshop</h1>
+
+      
+      <p class="lead">May 10, 2021</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="https://glbio-mlmb.github.io/" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="mailto:glbio.mlmb@gmail.com" rel="me" title="Email" target="_blank">
+        <i class="fab fa-telegram" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Machine Learning on Microbiome Data: Theory and Practice</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2020-11-21T00:00:00Z">Nov 21, 2020</time> &middot; 2 min read
+  </div>
+
+  <div>
+  <h3 id="organizers-tatiana-lenskaia-and-sambhawa-priya">Organizers: Tatiana Lenskaia and Sambhawa Priya</h3>
+<p>The workshop will focus on the theory and application of machine learning to
+microbiome datasets, including bacterial and viral communities. The following topics will be
+addressed:</p>
+<ul>
+<li>Introduction to supervised machine learning, and how to implement a machine learning
+workflow using R and Python.</li>
+<li>Applying machine learning algorithms (such as Random Forest) on microbiome datasets
+for disease risk prediction in humans.</li>
+<li>Introduction to bacteria-phage interactions, and how it contributes to bacterial
+pathogenicity.</li>
+<li>Applying machine learning methods to predict bacterial pathogenicity induced by
+phages.</li>
+</ul>
+<h2 id="target-audience">Target audience​​</h2>
+<p>This workshop is aimed at graduate students and postdocs. Attendees should
+have some familiarity with programming in R or Python.</p>
+<h2 id="learning-objectives">Learning objectives​</h2>
+<p>This workshop will provide an opportunity to explore machine learning in
+theory and practice, in the context of microbiome datasets. The attendees will learn how to:</p>
+<ul>
+<li>Apply machine learning methods on genomic data from bacteria and viruses.</li>
+<li>Implement a machine learning pipeline using R and Python on microbiome datasets.
+This will include data wrangling/preprocessing, training and cross-validation, prediction
+and visualization of prediction performance.</li>
+<li>Perform biological interpretation of predicted outcome.</li>
+</ul>
+<h2 id="session-plan">Session plan</h2>
+<p>We plan to conduct a 2-hour tutorial-style workshop. In the first hour, we would
+cover an introduction to supervised machine learning, and its application on human microbiome
+data, and in the second hour, we would go over the application of machine learning in
+bacteria-phage interactions. Each hour-long session would be structured as a theory segment
+followed by a hands-on tutorial.</p>
+<ol>
+<li>(~ 30 mins, Sambhawa) Introduction to supervised machine learning and its application
+to biological datasets. We will cover some basic concepts, terminology/notations,
+workflow of a machine learning pipeline, and model performance assessment. We will
+end with a brief overview of microbiome and its implications in human health and
+disease.</li>
+<li>(~ 30 mins, Sambhawa) Hands-on tutorial on applying machine learning (using R) to
+predict disease status using human microbiome data.</li>
+<li>(~ 30 mins, Tatiana) Background on bacteria-virus interactions, and how bacteriophage
+insertions in bacterial genomes can be used to predict pathogenicity of bacteria.</li>
+<li>(~30 mins, Tatiana) Hands-on tutorial on applying machine learning (using python) to
+predict pathogenicity of bacteria using bacterial and viral genomic datasets.</li>
+</ol>
+<h2 id="contact-us">Contact us</h2>
+<p>Email: <a href="mailto:glbio.mlmb@gmail.com">glbio.mlmb@gmail.com</a></p>
+<p>Please contact us directly with questions related to a specific section:</p>
+<p>Tatiana Lenskaia (<a href="mailto:lensk010@umn.edu">lensk010@umn.edu</a>), Sambhawa Priya (<a href="mailto:priya030@umn.edu">priya030@umn.edu</a>)</p>
+  </div>
+
+  <div>
+  <ul class="tags"></ul>
+</div>
+
+
+  
+</div>
+
+
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Lenskaia, Priya 2020
+
+      &middot; <a href="https://gohugo.io" target="_blank">Powered by the Soho theme for Hugo</a>
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>
